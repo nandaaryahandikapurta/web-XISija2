@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #606c38;
+  min-height: 20000px;
+  overflow-x: hidden;
+}
+
+:root {
+  --pink: #f14e95;
+  --bg: #000;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+img {
+  width: 100%;
+}
+
+.hero {
+  /* margin-top: 50px; */
+  background-image: url(img/bukber.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
+
+.nav-link {
+  color: white;
+}
+.navbar-nav a:hover {
+  color: red;
+  text-shadow: var(--shadow);
+}
+.about img {
+  box-shadow: var(--shadow);
+}
+
+.heading h1 {
+  display: block;
+  position: absolute;
+  margin-left: 45%;
+  width: 250px;
+  border-bottom: 1px solid red;
+  text-shadow: var(--shadow);
+}
+.sub-heading p {
+  display: block;
+  width: 450px;
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 70px;
+  text-shadow: var(--shadow);
+}
+
+h4,
+h1,
+main {
+  text-shadow: var(--shadow);
+}
+
+/* media query */
+/* tabblet */
+
+@media (min-width: 768px) {
+  .container img {
+    width: 100px;
+  }
+  .heading h1 {
+  }
+  .sub-heading p {
+  }
+}
+
+@media (max-width: 576px) {
+  .heading h1 {
+    position: absolute;
+    font-size: 13px;
+    margin-top: 65%;
+    margin-left: 5px;
+    width: 100px;
+  }
+  .sub-heading p {
+    position: absolute;
+    font-size: 11px;
+    margin-top: 75%;
+    width: 240px;
+    margin-left: 5px;
+  }
+}

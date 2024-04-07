@@ -29,6 +29,24 @@ img {
   font-size: 1.7rem;
 }
 
+.my-navbar {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(2px);
+}
+
+.my-navbar .navbar-brand,
+.my-navbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+.my-navbar .offcanvas {
+  height: 100vh;
+  width: 70%;
+  background-color: #373f55;
+}
+
 /* hero-selesai */
 
 .hero {
@@ -40,7 +58,7 @@ img {
 }
 
 .nav-link {
-  color: white;
+  color: #f7f8f7;
 }
 .navbar-nav a:hover {
   color: red;
@@ -53,7 +71,7 @@ img {
 .heading h1 {
   display: block;
   position: absolute;
-  top: 80px;
+  top: 130%;
   left: 60%;
   font-size: 2.4rem;
   width: 250px;
@@ -62,7 +80,7 @@ img {
 }
 .sub-heading p {
   display: block;
-  top: 1px;
+  top: 140%;
   left: 60%;
   font-size: 1.4rem;
   width: 450px;
@@ -233,6 +251,26 @@ main {
     margin-bottom: 5rem;
   }
 
+  .heading h1 {
+    display: block;
+    position: absolute;
+    top: 130%;
+    left: 60%;
+    font-size: 2.4rem;
+    width: 250px;
+    border-bottom: 1px solid red;
+    text-shadow: var(--shadow);
+  }
+  .sub-heading p {
+    display: block;
+    top: 140%;
+    left: 60%;
+    font-size: 1.4rem;
+    width: 450px;
+    position: absolute;
+    text-shadow: var(--shadow);
+  }
+
   .rangkaian::before {
     left: 60px;
   }
@@ -258,24 +296,8 @@ main {
     left: -13px;
     right: auto;
   }
-  .heading h1 {
-    display: block;
-    position: absolute;
-    top: 80px;
-    left: 60%;
-    font-size: 2.4rem;
-    width: 250px;
-    border-bottom: 1px solid red;
-    text-shadow: var(--shadow);
-  }
-  .sub-heading p {
-    display: block;
-    top: 1px;
-    left: 60%;
-    font-size: 1.4rem;
-    width: 450px;
-    position: absolute;
-    text-shadow: var(--shadow);
+  .simply-countdown > .simply-section {
+    padding: 70px;
   }
 }
 
@@ -286,24 +308,20 @@ main {
     font-size: 65%;
   }
 
-  .heading h1 {
-    display: block;
-    position: absolute;
-    margin-top: 60%;
-    margin-left: 2%;
-    width: 250px;
-    border-bottom: 1px solid red;
-    text-shadow: var(--shadow);
-  }
-  .sub-heading p {
-    display: block;
-    width: 450px;
-    position: absolute;
-    margin-top: 70%;
-    margin-left: 2%;
-    text-shadow: var(--shadow);
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
   }
 
+  .sticky-top {
+    overflow: hidden;
+  }
+  .my-navbar .nav-link {
+    font-size: 2.4rem;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
   .kelas h2 {
     color: white;
     font-weight: bold;
@@ -345,6 +363,26 @@ main {
     font-weight: 300;
   }
 
+  .heading h1 {
+    display: block;
+    position: absolute;
+    top: 125%;
+    left: 10%;
+    font-size: 2.4rem;
+    width: 250px;
+    border-bottom: 1px solid red;
+    text-shadow: var(--shadow);
+  }
+  .sub-heading p {
+    display: block;
+    top: 130%;
+    left: 10%;
+    font-size: 1.4rem;
+    width: 450px;
+    position: absolute;
+    text-shadow: var(--shadow);
+  }
+
   .container img {
     width: 100px;
   }
@@ -353,6 +391,11 @@ main {
 @media (max-width: 576px) {
   html {
     font: 50%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 3px;
   }
 
   .hero h4 {

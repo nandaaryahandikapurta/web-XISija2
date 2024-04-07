@@ -1,11 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 body {
   background-color: #606c38;
   min-height: 20000px;
-  overflow-x: hidden;
+  font-size: 1.2rem;
 }
 
 :root {
@@ -17,6 +13,23 @@ body {
 img {
   width: 100%;
 }
+
+/* hero */
+
+.hero h4 {
+  font-size: 2.7rem;
+}
+.hero h1 {
+  font-size: 3.3rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+.hero a {
+  font-size: 1.7rem;
+}
+
+/* hero-selesai */
 
 .hero {
   /* margin-top: 50px; */
@@ -40,17 +53,20 @@ img {
 .heading h1 {
   display: block;
   position: absolute;
-  margin-left: 45%;
+  top: 80px;
+  left: 60%;
+  font-size: 2.4rem;
   width: 250px;
   border-bottom: 1px solid red;
   text-shadow: var(--shadow);
 }
 .sub-heading p {
   display: block;
+  top: 1px;
+  left: 60%;
+  font-size: 1.4rem;
   width: 450px;
   position: absolute;
-  margin-left: 45%;
-  margin-top: 70px;
   text-shadow: var(--shadow);
 }
 
@@ -60,32 +76,344 @@ main {
   text-shadow: var(--shadow);
 }
 
+/* kelas */
+
+.kelas {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+.kelas h2 {
+  color: white;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  font-size: 4rem;
+}
+.kelas span {
+  text-transform: uppercase;
+  color: lightgray;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-shadow: var(--shadow);
+}
+.kelas p {
+  color: white;
+  font-weight: 300;
+  text-shadow: var(--shadow);
+}
+.rangkaian {
+  list-style: none;
+  color: white;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+.rangkaian::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+}
+.rangkaian li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.rangkaian li::before,
+.rangkaian li::after {
+  content: "";
+  display: table;
+}
+.rangkaian li::after {
+  clear: both;
+}
+
+.rangkaian li .gambar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rangkaian li .text-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid white;
+  padding: 2rem;
+  position: relative;
+  border-radius: 20px;
+  background-color: #654321;
+}
+
+.rangkaian li .text-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.rangkaian li .text-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.rangkaian li.inverted .text-panel {
+  float: right;
+}
+
+.rangkaian li.inverted .text-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.rangkaian li.inverted .text-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+/* kelas-selesai */
+
+/* jurusan */
+
+.jurusan h2 {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.jurusan span {
+  color: lightgray;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.jurusan p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+/* jurusan-selesai */
+
 /* media query */
+
+/* wxtralarge */
+
+@media (max-width: 1200px) {
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .kelas {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .rangkaian::before {
+    left: 60px;
+  }
+  .rangkaian li .gambar {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+  .rangkaian li .text-panel {
+    width: calc(100% - 200px);
+    float: right;
+  }
+  .rangkaian li .text-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+
+    left: -15px;
+    right: auto;
+  }
+  .rangkaian li .text-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+  .heading h1 {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 60%;
+    font-size: 2.4rem;
+    width: 250px;
+    border-bottom: 1px solid red;
+    text-shadow: var(--shadow);
+  }
+  .sub-heading p {
+    display: block;
+    top: 1px;
+    left: 60%;
+    font-size: 1.4rem;
+    width: 450px;
+    position: absolute;
+    text-shadow: var(--shadow);
+  }
+}
+
 /* tabblet */
 
 @media (min-width: 768px) {
-  .container img {
-    width: 100px;
+  html {
+    font-size: 65%;
   }
+
   .heading h1 {
+    display: block;
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 2%;
+    width: 250px;
+    border-bottom: 1px solid red;
+    text-shadow: var(--shadow);
   }
   .sub-heading p {
+    display: block;
+    width: 450px;
+    position: absolute;
+    margin-top: 70%;
+    margin-left: 2%;
+    text-shadow: var(--shadow);
+  }
+
+  .kelas h2 {
+    color: white;
+    font-weight: bold;
+
+    text-shadow: var(--shadow);
+    font-size: 4rem;
+  }
+  .kelas span {
+    margin-top: 10rem;
+    text-transform: uppercase;
+    color: lightgray;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-shadow: var(--shadow);
+  }
+  .kelas p {
+    color: white;
+    font-weight: 300;
+    text-shadow: var(--shadow);
+  }
+
+  .jurusan h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .jurusan span {
+    color: lightgray;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  .jurusan p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .container img {
+    width: 100px;
   }
 }
 
 @media (max-width: 576px) {
+  html {
+    font: 50%;
+  }
+
+  .hero h4 {
+    font-size: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  .hero a {
+    font-size: 0.9rem;
+  }
+
+  .jurusan span {
+    font-size: 0.9rem;
+  }
+
+  .jurusan h2 {
+    font-size: 3.3rem;
+  }
+  .jurusan p {
+    font-size: 1rem;
+  }
+
   .heading h1 {
     position: absolute;
     font-size: 13px;
-    margin-top: 65%;
-    margin-left: 5px;
+    top: 155%;
+    left: 5%;
     width: 100px;
   }
   .sub-heading p {
     position: absolute;
     font-size: 11px;
-    margin-top: 75%;
+    top: 160%;
     width: 240px;
-    margin-left: 5px;
+    margin-bottom: 10rem;
+    left: 5%;
+  }
+
+  .kelas span {
+    margin-top: 15rem;
+    text-transform: uppercase;
+    color: lightgray;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-shadow: var(--shadow);
+  }
+  .rangkaian li .text-panel {
+    width: 50%;
+    transform: translateX(-20px);
+    left: 8px;
+  }
+  .rangkaian li .text-panel::before {
+    top: 35px;
+  }
+  .rangkaian li .text-panel::after {
+    top: 35px;
   }
 }

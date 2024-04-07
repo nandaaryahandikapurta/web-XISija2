@@ -1,6 +1,5 @@
 body {
   background-color: #606c38;
-  min-height: 20000px;
   font-size: 1.2rem;
 }
 
@@ -26,7 +25,7 @@ img {
   font-size: 1.3rem;
 }
 .hero a {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .my-navbar {
@@ -42,8 +41,10 @@ img {
 }
 
 .my-navbar .offcanvas {
-  height: 100vh;
+  height: 60vh;
   width: 70%;
+  border-radius: 10px;
+  font-size: 1.3rem;
   background-color: #373f55;
 }
 
@@ -59,6 +60,7 @@ img {
 
 .nav-link {
   color: #f7f8f7;
+  font-size: 1.2rem;
 }
 .navbar-nav a:hover {
   color: red;
@@ -233,6 +235,56 @@ main {
 }
 /* jurusan-selesai */
 
+/* card */
+
+img {
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4c9b4;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.card {
+  box-shadow: var(--shadow);
+  margin: 0 10px;
+  width: 20rem;
+}
+
+.card-body {
+  background-color: #373f55;
+}
+.card-body h3 {
+  font-size: 20px;
+  color: #f7f8f7;
+  font-weight: bold;
+}
+.card-text p {
+  font-size: 1rem;
+  text-align: left;
+  color: #f7f8f7;
+  font-weight: 300;
+}
+
+/* card-selesai */
+
+footer {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background-color: grey;
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* media query */
 
 /* wxtralarge */
@@ -360,6 +412,28 @@ main {
   .container img {
     width: 100px;
   }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur agar kartu-kartu berjejer ke bawah saat ukuran layar lebih kecil */
+    justify-content: center;
+    align-items: center;
+    background-color: #d4c9b4;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    background-size: cover;
+    padding: 20px; /* Menambahkan padding agar kartu-kartu tidak terlalu dekat dengan tepi kontainer */
+  }
+
+  .card {
+    box-shadow: var(--shadow);
+    margin: 10px; /* Atur jarak antara kartu-kartu */
+    width: 15rem;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* mobile */
@@ -418,7 +492,7 @@ main {
   }
 
   .kelas span {
-    margin-top: 110%;
+    margin-top: 90%;
     text-transform: uppercase;
     color: lightgray;
     display: block;

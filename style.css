@@ -405,18 +405,20 @@ main {
     top: 175%;
     left: 10%;
     width: 100px;
+    margin-top: 0;
   }
   .sub-heading p {
     position: absolute;
     font-size: 11px;
     top: 180%;
     width: 240px;
-    margin-bottom: 10rem;
+    margin-top: 0;
+    margin-bottom: 20px;
     left: 10%;
   }
 
   .kelas span {
-    margin-top: 15rem;
+    margin-top: 110%;
     text-transform: uppercase;
     color: lightgray;
     display: block;
